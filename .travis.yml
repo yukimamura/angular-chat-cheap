@@ -1,0 +1,14 @@
+dist: trusty
+sudo: required
+language: node_js
+node_js:
+- '8.9.4'
+addons:
+  chrome: stable
+cache:
+  apt: true
+  bundler: true
+  directories:
+  - node_modules
+script:
+- ng build --prod
