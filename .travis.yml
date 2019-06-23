@@ -12,3 +12,10 @@ cache:
   - node_modules
 script:
 - ng build --prod
+deploy:
+  provider: firebase
+  token:
+    secure: 1/2bRoVlZXMDsUqWR7AzL-YDPZwP06aOQqsI6-WPTzp3q7yMgwdB5ViIbPUHtsYTFY
+  skip_cleanup: true
+  on:
+    branch: master
